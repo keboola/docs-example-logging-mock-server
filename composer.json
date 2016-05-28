@@ -1,5 +1,5 @@
 {
     "require": {
-        "keboola/gelf-server": "^1.0"
+        "keboola/gelf-server": "^1.0.1"
     }
 }
