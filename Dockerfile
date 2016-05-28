@@ -1,7 +1,7 @@
 FROM php:7
 
-EXPOSE 12201/udp
-EXPOSE 12201/tcp
+EXPOSE 12202/udp
+EXPOSE 12202/tcp
 
 COPY . /src/
 WORKDIR /src/
