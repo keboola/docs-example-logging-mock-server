@@ -1,5 +1,5 @@
 # Example GELF Mock Server
-This repository contains a mock server which can be used when developing KBC applications with [GELF logging](https://developers.keboola.com/common-interface/logging/).
+This repository contains a mock server which can be used when developing KBC applications with [GELF logging](https://developers.keboola.com/extend/common-interface/logging/).
 
 ## Installation
 You can either run on the server as a docker container or directly with PHP.
