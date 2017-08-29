@@ -13,8 +13,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && rm -r /var/lib/apt/lists/* \
     && cd /root/ \
     && curl -sS https://getcomposer.org/installer | php \
-    && ln -s /root/composer.phar /usr/local/bin/composer \
-    && docker-php-ext-install zip
+    && ln -s /root/composer.phar /usr/local/bin/composer
 
 COPY . /src/
 ENTRYPOINT /src/start.sh
