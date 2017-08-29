@@ -9,13 +9,13 @@ $server->start(
     12202,
     12202,
     function ($port) {
-        echo "HTTP Server listening on port $port ";
+        echo "HTTP Server listening on port $port\n";
     },
-    function (&$terminated) {
+    function () {
         echo ".";
     },
     function ($event) {
-        var_dump($event);
+        echo var_export($event, true) . "\n";
     },
     null,
     function ($event) {
