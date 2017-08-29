@@ -16,4 +16,5 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && ln -s /root/composer.phar /usr/local/bin/composer
 
 COPY . /src/
+RUN composer install --no-interaction
 ENTRYPOINT /src/start.sh
