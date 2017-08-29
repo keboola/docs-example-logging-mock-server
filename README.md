@@ -13,7 +13,7 @@ to start. The server will start on port 12202.
 docker run -e SERVER_TYPE=tcp quay.io/keboola/docs-example-logging-mock-server
 ```
 
-### Running direcly in PHP
+### Running directly in PHP
 To install the server, run:
 
 ```

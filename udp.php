@@ -2,7 +2,7 @@
 
 use Keboola\Gelf\ServerFactory;
 
-require('vendor/autoload.php');
+require 'vendor/autoload.php';
 
 $server = ServerFactory::createServer(ServerFactory::SERVER_UDP);
 $server->start(
@@ -16,5 +16,10 @@ $server->start(
     },
     function ($event) {
         var_dump($event);
+    },
+    null,
+    function ($event) {
+        echo "\n===== Invalid event received: " .
+            var_export($event, true) . " \n===\n";
     }
 );
