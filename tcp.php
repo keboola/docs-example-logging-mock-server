@@ -6,8 +6,8 @@ require 'vendor/autoload.php';
 
 $server = ServerFactory::createServer(ServerFactory::SERVER_TCP);
 $server->start(
-    12202,
-    12202,
+    getenv('PORT') ?: 12202,
+    getenv('PORT') ?: 12202,
     function ($port) {
         echo "TCP Server listening on port $port\n";
     },
