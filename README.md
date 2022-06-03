@@ -28,3 +28,7 @@ php tcp.php
 
 Which will start a TCP server on port 12202.
 
+
+## License
+
+MIT licensed, see [LICENSE](./LICENSE) file.
